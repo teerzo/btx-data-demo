@@ -1,0 +1,32 @@
+
+$header-height: 90px;
+$header-height-mobile: 60px;
+.route-home {
+    
+    .route-content {
+        background: rgba(0,0,0,0.0);
+        position: absolute;
+        z-index: 1;
+        top: $header-height;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        padding: 15px;
+        overflow-y: auto;
+
+        -webkit-transition: all 0.8s ease-out;
+        -moz-transition: all 0.8s ease-out;
+        -o-transition: all 0.8s ease-out;
+        transition: all 0.8s ease-out;
+        
+        background: -webkit-linear-gradient(rgba(237, 112, 144,0.8), rgba(173,106,148,1.0));
+        background: -moz-linear-gradient(rgba(237, 112, 144,0.8), rgba(173,106,148,1.0));
+        background: -o-linear-gradient(rgba(237, 112, 144,0.8), rgba(173,106,148,1.0));
+        background: linear-gradient(rgba(237, 112, 144,0.8), rgba(173,106,148,1.0));
+
+
+
+    }
+    
+}

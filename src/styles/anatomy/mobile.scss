@@ -1,0 +1,54 @@
+
+$header-height: 140px;
+$header-height-mobile: 90px;
+
+$media-desktop-min-width: 1000px;
+
+
+$primary-dark: rgba(148,48,106,1);
+$primary-light: rgba(230,112,145,1);
+
+aside {
+    width: 100%;
+}
+@media only screen and (max-width: $media-desktop-min-width) {
+    .route-anatomy {
+        .route-nav {
+            width: 100%;
+        }
+        .route-content {
+            background: rgba(0,0,0,0.0);
+
+            display: flex;
+
+            position: absolute;
+            z-index: 1;
+            top: $header-height;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            width: 100%;
+            // padding: 15px;
+            // overflow-y: auto;
+            overflow: hidden;
+
+            -webkit-transition: all 0.8s ease-out;
+            -moz-transition: all 0.8s ease-out;
+            -o-transition: all 0.8s ease-out;
+            transition: all 0.8s ease-out;
+            
+            // background-image: linear-gradient(to left, #fe1612,#eeee33,#61e139,blue); 
+            // background: $primary-dark;
+            // background: -webkit-linear-gradient(to right, $primary-dark, $primary-light);
+            // background: -moz-linear-gradient( to right, $primary-dark, $primary-light);
+            // background: -o-linear-gradient(to right, $primary-dark, $primary-light);
+            // background: linear-gradient(to right, $primary-dark, $primary-light);
+
+            background-color: #FFFFFF;
+            
+            display: block;
+            overflow-y: auto;
+        }
+    }
+}
+

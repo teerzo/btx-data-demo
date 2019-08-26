@@ -1,0 +1,205 @@
+$primary-color: #333333;
+
+
+$primary-light: rgb(237, 112, 144);
+// $primary-dark: rgb(173,106,148);
+$primary-dark: #892867;
+
+.component-anatomy-info {
+    overflow-y: auto;
+    background-color: #FFFFFF;
+    padding-left: 15px;
+    padding-right: 15px;
+
+
+    // .panel-main {
+    //     min-height: 380px;
+    //     padding-right: 30px;
+    //     // padding: 10px;
+    //     overflow-y: auto;
+    //     background-color: #FFFFFF;
+
+    //     @media only screen and (max-width: $media-desktop-min-width) {
+    //         padding-left: 30px;
+    //     }
+
+    .title {
+        font-size: 18px;
+        font-weight:400;
+        // color:#ffffff;
+
+        display: inline-block;
+        width: 100%;
+        // border: 1px solid red !important;
+        font-size: 20px;
+        text-align: center;
+       
+    }
+
+    p {
+        font-weight: 400;
+        font-size: 15px;
+        color:#4F677C;
+        padding-top: 20px;
+        padding-left: 15px;
+    }
+
+
+    .panel-main-top {
+        padding-top: 10px;
+        padding-bottom: 10px;
+
+        .btn {
+            color: $primary-dark;
+            
+
+            margin-right: 10px;
+            
+            border-radius: 2px;
+            border-color: $primary-dark;
+            border-width: 1px;
+            border-style: solid;
+            opacity: 0.5;
+        }
+        .btn.active {
+            opacity: 1.0;
+        }
+        .checkbox {
+            margin: 0px;
+            input {
+                position: static;
+                margin: 0px;
+            }
+        }
+    }
+
+    .table-bordered {
+        border-color: #F2F2F2;
+        // border-left: 0px;
+    }
+    .muscle-table {
+        .table {
+            tbody {
+                tr {
+                    td {
+                        font-size: 14px;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        text-align: center;
+                    }
+                    td:nth-child(1) {
+                        // width: 30%;
+                        text-align: left;
+                    }
+                    td:nth-child(2) {
+                        min-width: 200px;
+                    }
+                }
+                tr:nth-child(odd) {
+                    background-color: #F9F9F9;
+                }
+                // tr:last-child {
+                //     background-color: #FFFFFF;
+                // }
+                
+                
+            }
+        }
+    }
+    .patient-table {
+        .table {
+            tbody {
+                tr {
+                    td {
+                        font-size: 14px;
+                        padding-left: 15px;
+                        padding-right: 15px;
+                        padding-top: 10px;
+                        padding-bottom: 10px;
+                        text-align: center;
+                    }
+                    td:nth-child(1) {
+                        // width: 30%;
+                        text-align: left;
+                    }
+                    td:nth-child(2) {
+                        min-width: 200px;
+                    }
+                }
+                tr:nth-child(odd) {
+                    background-color: #F9F9F9;
+                }
+                // tr:last-child {
+                //     background-color: #FFFFFF;
+                // }
+                
+                
+            }
+        }
+        // .table {
+        
+        //     // border: 1px solid #AAAAAA;
+        //     thead {
+        //         background-color: #F9F9F9;
+        //         td {
+        //             font-size: 14px;
+        //             text-align: center;
+        //         }
+        //         td:nth-child(1) {
+        //             width: 30%;
+        //             text-align: left;
+        //             padding: 15px;
+        //             font-size: 18px;
+        //         }
+        //     }
+        //     tbody {
+        //         tr {
+        //             td {
+        //                 padding: 15px;
+        //                 text-align: center;
+        //             }
+        //             td:nth-child(1) {
+        //                 // width: 30%;
+        //                 text-align: left;
+        //             }
+        //         }
+        //         // tr:nth-child(odd) {
+        //         //     background-color: #dddddd;
+        //         // }
+        //         tr:last-child {
+        //             background-color: #F9F9F9;
+        //             // border-width: 2px 0 0 0;
+        //             // border-color: #333333;
+        //             // border-style: solid;
+        //         }
+        //         tr.vis {
+        //             display: table-row;
+        //             opacity: 1.0;
+        //         }
+        //         tr.show:nth-child(odd) {
+        //             background-color: #dddddd;
+        //         }
+        //         tr.hide {
+        //             opacity: 0.5;
+        //             // display: table-row !important; 
+        //             display: none;
+        //         }
+        //         .table-link {
+        //             color: #177eed;
+        //             text-decoration: underline;
+        //         }
+        //     }
+        //     .full {
+        //         td {
+        //             display: none;
+        //         }
+        //         td:nth-child(1) {
+        //             display: table-cell;
+        //         }
+        //     }
+            
+        // }
+    }
+}

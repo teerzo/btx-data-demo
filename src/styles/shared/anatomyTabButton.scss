@@ -1,0 +1,33 @@
+.component-anatomy-button-tab {
+    .tab {
+        border: 1px solid #F2F2F2;
+        display: flex;
+        background-color: #F9F9F9;
+        height: 34px;
+        margin-right: 5px;
+        min-width: 100px;
+        padding-left: 5px; 
+        padding-top: 5px;
+        padding-right: 5px;
+        .tab-name {
+            width: 80px;
+            color: #748a9e;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        .tab-close {
+            width: 20px;
+            color: #333333;
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+    .tab.active {
+        background-color: #FFFFFF;
+        .tab-name {
+            font-weight: 700;
+            color: #4F677C;
+        }
+    }
+}

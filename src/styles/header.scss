@@ -1,0 +1,285 @@
+
+$header-height: 90px;
+$header-height-mobile: 60px;
+.header {
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: $header-height;
+    background-color: #4f677c;  
+
+    
+    // color: #FFFFFF !important;
+    border-width: 0 0 1px 0;
+    border-style: solid;
+    border-color: #eeeeee;
+
+
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+    .logo {
+        // border: 1px solid red;
+        width: 30%;
+        min-width: 160px;
+        display: inline-block;
+        .title {
+            display: block;
+            font-size: 50px;
+            color: #FFFFFF;
+            text-decoration: none;
+
+            padding-top: 11px;
+            padding-left: 15px;
+            // margin-bottom: 30px;
+            .small {
+                font-size: 32px;
+                @media only screen and (max-width: 500px) {
+                    font-size: 20px;
+                }
+            }
+            @media only screen and (max-width: 500px) {
+                font-size: 30px;
+            }
+        }
+
+        
+    }
+    
+    .header-mobile {
+        // border: 1px solid red;
+        display: none;
+        width: auto;
+        
+        .link-hamburger { 
+            display: none;
+            float: right;        
+            font-size: 1.0em;
+            color: #333333;
+            .glyphicon {
+                font-size: 1.5em;
+                font-weight: 200;
+                padding-top: 20px;
+                padding-right: 15px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+            }
+        }
+    }
+    
+    
+    .links {
+        // border: 1px solid red;
+        width: 50%;
+        // display: inline-block;
+        width: 100%;
+        padding-top: 30px;
+        text-align: center;
+        .link {
+            display: inline-block;
+            font-size: 32px;
+            color: #FFFFFF;
+            text-decoration: none;
+            text-align: center;
+            margin-left: 20px;
+            margin-right: 20px;
+            // vertical-align: bottom;
+            line-height: 1.0;
+            opacity: 0.5;
+
+            -webkit-transition: opacity 0.1s ease-out;
+            -moz-transition: opacity 0.1s ease-out;
+            -o-transition: opacity 0.1s ease-out;
+            transition: opacity 0.1s ease-out;
+            @media only screen and (max-width: 1400px) {
+                font-size: 20px;
+            }
+        }
+        .link.active {
+            opacity: 1.0;
+            text-decoration: underline;
+        }
+        .link:hover {
+            opacity: 1.0;
+        }
+        .logout {
+            display: none;
+            float: right;
+            margin-right: 20px;
+        }
+        .login {
+            float: right;
+            margin-right: 20px;
+        }
+        
+    }
+    .login {
+        width: 30%;
+        min-width: 300px;
+        padding-top: 36px;
+        text-align: center;
+        // border: 1px solid red;
+        p {
+            font-size: 20px;
+            font-weight: 100;
+            color: #FFFFFF;
+        }
+        @media only screen and (max-width: 500px) {
+            display: none;
+            // width: 100%;
+            // float: right;
+        }
+    }
+    .popout {
+        // border: 1px solid blue;
+        display: block;
+        position: absolute;
+        z-index: 100;
+        top: 0px;
+        right: -100%;
+        bottom: 0px;
+        // width: 100%;
+        left: 100%;
+
+        background: rgba(0,0,0,0.0);
+
+        -webkit-transition: background 0.5s ease-out;
+        -moz-transition: background 0.5s ease-out;
+        -o-transition: background 0.5s ease-out;
+        transition: background 0.5s ease-out;
+
+        -webkit-transition: left 1.5s ease-out;
+        -moz-transition: left 1.5s ease-out;
+        -o-transition: left 1.5s ease-out;
+        transition: left 1.5s ease-out;
+
+        -webkit-transition: right 1.5s ease-out;
+        -moz-transition: right 1.5s ease-out;
+        -o-transition: right 1.5s ease-out;
+        transition: right 1.5s ease-out;
+        
+        .panel {
+            position: absolute;
+            z-index: 101;
+            top: 0px;
+            right: -100px;
+            bottom: 0px;
+            // left: 0px;
+            width: 200px;
+            
+            background-color: #FFFFFF;
+            margin-bottom: 0px;
+            border-radius: 0px;
+           
+
+            -webkit-transition: all 0.5s ease-out;
+            -moz-transition: all 0.5s ease-out;
+            -o-transition: all 0.5s ease-out;
+            transition: all 0.5s ease-out;
+
+            border-width: 0px 0 0px 0px;
+                border-color: #ffffff;
+                border-style: solid;
+            .divider {
+                width: 100%;
+                height: 0px;
+                padding-top: calc(#{$header-height-mobile} - 1px);
+                margin-bottom: 10px;
+ 
+                border-width: 0px 0 1px 0px;
+                border-color: #eeeeee;
+                border-style: solid;
+            }
+            .link {
+                display: block;
+                text-align: left;
+                font-size: 2.0em;
+                color: #333333;
+
+                text-decoration: none;
+
+                padding-left: 20px;
+                margin-bottom: 5px;
+                
+
+                opacity: 0.5;
+
+                -webkit-transition: opacity 0.1s ease-out;
+                -moz-transition: opacity 0.1s ease-out;
+                -o-transition: opacity 0.1s ease-out;
+                transition: opacity 0.1s ease-out;
+            }
+            .link.active {
+                opacity: 1.0;
+            }
+            .link:hover {
+                opacity: 1.0;
+            }
+            .logout {
+                display: none;
+                // float: right;
+                // margin-right: 20px;
+            }
+            .login {
+                // float: right;
+                // margin-right: 20px;
+            }
+            .user {
+                font-size: 20px;
+                padding-left: 20px;
+            }
+        }
+        .close {
+            float: right;  
+            opacity: 1.0;      
+            .glyphicon {
+                 color: #333333;
+                font-size: 1.5em;
+                font-weight: 200;
+                padding-top: 15px;
+                padding-right: 10px;
+                padding-bottom: 10px;
+                padding-left: 10px;
+            }
+        }
+        @media only screen and (min-width: 500px) {
+            display: none;
+        }
+    }
+    .popout.active {
+        // display: block;
+        right: 0%;
+        left: 0%;
+        background: rgba(0,0,0,0.5);
+
+        -webkit-transition: left 0.5s ease-out;
+        -moz-transition: left 0.5s ease-out;
+        -o-transition: left 0.5s ease-out;
+        transition: left 0.5s ease-out;
+
+        -webkit-transition: right 0.5s ease-out;
+        -moz-transition: right 0.5s ease-out;
+        -o-transition: right 0.5s ease-out;
+        transition: right 0.5s ease-out;
+         .panel {
+            right: 0px;
+            width: 200px;
+            background-color: #FFFFFF;
+            // background: rgba(0,0,0,0.0);
+        }
+     }
+    @media only screen and (max-width: 500px) {
+        height: $header-height-mobile;
+        .header-mobile {
+            display: block;
+            width: 100%;
+            .link-hamburger {
+                display: inline-block !important;
+            }
+        }
+        .links {
+            display: none;
+        }
+    }
+}

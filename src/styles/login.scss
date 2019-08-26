@@ -1,0 +1,231 @@
+
+$header-height: 90px;
+$header-height-mobile: 60px;
+
+@font-face {
+    font-family: 'SF UI Display Black';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Black'), url('../fonts/sf-ui-display-black-58646a6b80d5a.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SF UI Display Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Light'), url('../fonts/sf-ui-display-light-58646b33e0551.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'SF UI Display Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Medium'), url('../fonts/sf-ui-display-medium-58646be638f96.woff') format('woff');
+}
+
+
+.route-login {
+    .route-content {
+        // background-color: #ffada0;
+        background: rgba(0,0,0,0.0);
+        position: absolute;
+        z-index: 1;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+
+        padding: 15px;
+
+        overflow-y: auto;
+        .route-bg {    
+            background-image: -webkit-linear-gradient(rgba(237, 112, 144,0.8), rgba(173,106,148,1.0));
+            background-image: -moz-linear-gradient(rgba(237, 112, 144,0.8), rgba(173,106,148,1.0));
+            background-image: -o-linear-gradient(rgba(237, 112, 144,0.8), rgba(173,106,148,1.0));
+            background-image: linear-gradient(rgba(237, 112, 144,0.8), rgba(173,106,148,1.0));
+            position: fixed;
+            z-index: -1;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+        }
+        .route-bg-image {
+            position: fixed;
+            top: 0px;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            z-index: -2;
+            
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .route-content-inner {
+            max-width: 700px;
+            margin: 0 auto;
+
+            .title {
+                margin-top: 80px;
+                margin-bottom: 80px;
+                text-align: center;
+                img {
+                    max-width: 200px;
+                    height: auto;
+                }
+                
+                h1 {
+                    margin: 0px;
+                    font-size: 60px;
+                    font-weight: 700;
+                    color: #FFFFFF;
+                }
+                h2 {
+                    margin: 0px;
+                    font-size: 20px;
+                    font-weight: 300;
+                    color: #FFFFFF;
+                }
+            }
+            .form {
+                width: 100%;
+                max-width: 300px;
+                margin: 0 auto;
+                // border: 1px solid red;
+                
+                
+
+
+                .field {
+                    margin-top: 20px;
+                    margin-bottom: 20px;
+                }
+                .field-login {
+                    text-align: center;
+                    input {
+                        font-size:18px;
+                        border: 1px solid #ffffff;
+                        border-radius: 5px;
+                    }
+                }
+
+                label {
+                    width: 100%;
+                    display: block;
+                    // font-family: 'SF UI Display Black';
+                    // font-family: 'SF UI Display Light';
+                    font-family: 'SF UI Display Medium';
+                    font-style: normal;
+                    font-weight: normal;
+                    size:22px;
+                    color:#ffffff;
+                }
+                input {
+                    width: 100%;
+
+                    margin-top: 5px;
+                    margin-bottom: 10px;
+
+                    display: block;
+                    height: 34px;
+                    background: rgba(0,0,0,0.0);
+
+                    color: #FFFFFF;
+
+                    border-top: 0px solid #FFFFFF;
+                    border-right: 0px solid #FFFFFF;
+                    border-bottom: 1.5px solid #FFFFFF;
+                    border-left: 0px solid #FFFFFF;
+                }
+                input:focus {
+                    
+                    outline: none;
+                    // border-width: 1px;
+                }
+                button {
+                    font-size:18px;
+                    border: 1px solid #ffffff;
+                    border-radius: 2px;
+                    
+                    width: 90px;
+                    color: #FFFFFF;
+                    // font-size: 16px;
+                    // border: 1px solid #FFFFFF;
+
+                    background: rgba(0,0,0,0.0);
+
+                    color: #FFFFFF;
+
+                    text-decoration: none;
+                    outline: none;
+                    a {
+                        color: #FFFFFF;
+                    }
+                }
+            }
+            .disclaimer {
+                width: 100%;
+                max-width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+
+                margin-top: 60px;
+                margin-bottom: 20px;
+
+                p {
+                    font-size: 17px;
+                    text-align: center;
+                    color: #FFFFFF;
+                }
+            }
+        }
+    }
+}
+
+
+// // .content {
+// //     position: absolute;
+// //     z-index: 1;
+// //     top: $header-height;
+// //     right: 0px;
+// //     bottom: 0px;
+// //     left: 0px;
+// //     width: 100%;
+
+// //     overflow-y: auto;
+// //     // background-color: #111111;
+
+// //     // border-width: 1px 0 0 0;
+// //     // border-style: solid;
+// //     // border-color: #FFFFFF;
+
+// //     // color: #FFFFFF;
+
+// //     // padding: 20px;
+
+// //     -webkit-transition: all 0.8s ease-out;
+// //     -moz-transition: all 0.8s ease-out;
+// //     -o-transition: all 0.8s ease-out;
+// //     transition: all 0.8s ease-out;
+    
+// //     // @media only screen and (max-width : 500px) {
+// //     //     z-index: 10;
+// //     //     top: 100px;
+// //     //     right: 0px;
+// //     //     bottom: 0px;
+// //     //     left: 0px;
+        
+        
+// //     // }
+// //     @media only screen and (max-width: 500px) {
+// //         top: $header-height-mobile;
+// //     }
+// }
+// .route-content.active {
+//         top: $header-height;
+//         right: 0px;
+//         bottom: 0px;
+//         left: 0px;
+//     }

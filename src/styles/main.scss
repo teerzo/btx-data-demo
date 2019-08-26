@@ -1,0 +1,88 @@
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+
+
+// @font-face {
+    
+//     font-family: 'ProductSans';
+//     src: url('../fonts/product-sans/product-sans_regular.ttf') format('ttf');
+//     font-weight: 600;
+//     font-style: normal;
+// }
+
+// body {
+//     font-family: 'Advent Pro', sans-serif;
+// }
+
+// @font-face {
+//     font-family: 'PT Sans', sans-serif;
+//     // src: url('../fonts/product-sans/product-sans_regular.ttf') format('ttf');
+//     font-weight: 600;
+//     font-style: normal;
+// }
+@font-face {
+    font-family: 'SF UI Display Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: local('SF UI Display Medium'), url('../fonts/sf-ui-display-medium-58646be638f96.woff') format('woff');
+}
+
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: 'SF UI Display Medium';
+    
+}
+
+$header-height: 90px;
+$header-height-mobile: 60px;
+
+.wrapper {
+    position: absolute;
+    z-index: 0;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    overflow: hidden;
+    
+    .options {  
+        position: absolute;
+        z-index: 1;
+        top: $header-height;
+        right: 200px;
+        bottom: 0px;
+        left: 0px;
+        width: 200px;
+
+        background-color: #AAAAAA;
+
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+
+        @media only screen and (max-width : 500px) {
+            z-index: 10;
+            top: $header-height;
+            right: 0px;
+            bottom: 0px;
+            left: 0px;
+            width: 200px;
+            
+        }
+        
+    }
+    .options.active {
+        top: $header-height;
+        right: 0px;
+        bottom: 0px;
+        left: -200px;
+        width: 200px;
+    }
+   
+}

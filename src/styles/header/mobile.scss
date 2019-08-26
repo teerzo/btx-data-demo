@@ -1,0 +1,130 @@
+
+
+$header-height: 90px;
+$header-height-mobile: 90px;
+
+$primary-light: rgb(237, 112, 144);
+$primary-dark: rgb(173,106,148);
+
+.component-header {
+    @media only screen and (max-width : 600px) {
+        // border: 1px solid red;  
+        // margin: -1px;      
+
+        display: flex;
+        overflow: hidden;
+        width: 100%;
+        height: $header-height-mobile;
+        background-color: #FFFFFF;  
+
+        
+        // color: #FFFFFF !important;
+        border-bottom: 1px solid #eeeeee;
+        // border-width: 0 0 1px 0;
+        // border-style: solid;
+        // border-color: #eeeeee;
+
+
+        padding-left: 5px;
+        padding-right: 5px;
+
+        -webkit-transition: all 0.5s ease-out;
+        -moz-transition: all 0.5s ease-out;
+        -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+
+        .flex-title {
+            
+            width: 50%;
+            padding: 10px;
+            .title {
+                // border: 1px solid red;
+                
+                width: 100px;
+                text-align: center;
+            
+                h1 {
+                    color: $primary-dark;
+                    font-size: 40px;
+                    font-weight: 700;
+                    margin: 0px;
+
+                }
+                h2 {
+                    color: $primary-dark;
+                    font-size: 20px;
+                    font-weight: 700;
+                    margin: 0px;
+                                
+                }
+            }
+
+        }
+        .flex-links {
+            // border: 1px solid red;  
+                   
+            width: 50%;
+            display: block;
+
+            .login {
+                // border: 1px solid red;    
+                    
+                display: flex;
+                justify-content: flex-end;
+                height: $header-height / 2;
+                padding: 10px;
+                .text {
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: #AAAAAA;
+                    margin-right: 5px;
+                }
+                .user {
+                    font-size: 15px;
+                    font-weight: 400;
+                    color: #AAAAAA;
+                }
+                
+            }
+            .navigation {
+                // border: 1px solid red;
+                   
+                display: flex;
+                justify-content: flex-end;
+                height: $header-height / 2;
+                padding: 10px;
+                
+                .link {
+                    // display: i
+                    font-size: 16px;
+                    font-weight: 700;
+                    color: $primary-dark;
+
+                    margin-left: 10px; 
+
+                    border-bottom: 0px solid $primary-dark;
+                }
+                .link.active {
+                    border-bottom: 1px solid $primary-dark;
+                }
+            }
+
+
+        }
+        .logo {
+            display: none;
+        }
+        .links {
+            display: none;
+        }
+        .header-mobile {
+            display: none;
+        }
+        .login {
+            display: none;
+        }
+        .popout {
+            display: none;
+        }
+    }
+}
