@@ -9,7 +9,7 @@ const projectName = 'btx-graph';
 
 // paths
 const dirNode = 'node_modules';
-const dirDist = path.resolve(__dirname, 'dist');
+const dirDist = path.resolve(__dirname, 'dist/');
 const dirEntry = path.resolve(__dirname, 'src/index.jsx');
 const dirIndex = path.resolve(__dirname, 'src/index.html');
 
@@ -36,7 +36,7 @@ module.exports = {
   output: {
     filename: '[name].bundle.js',
     path: dirDist,
-    publicPath: './'
+    publicPath: './dist'
   },
   module: {
     rules: [
